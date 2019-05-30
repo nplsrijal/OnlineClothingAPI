@@ -21,9 +21,9 @@ public class ItemDescriptionActivity extends AppCompatActivity {
 
         Bundle bundle =getIntent().getExtras();
         if(bundle !=null){
-            txtname.setText(bundle.getString("name"));
-            txtprice.setText("रू "+bundle.getString("price"));
-            txtdesc.setText(bundle.getString("desc"));
+            txtname.setText("Name : " + bundle.getString("name"));
+            txtprice.setText("Price :रू "+bundle.getString("price"));
+            txtdesc.setText("Description : " +bundle.getString("desc"));
 
         }
     }
